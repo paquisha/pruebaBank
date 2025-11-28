@@ -1,6 +1,5 @@
-package com.example.cuentas.entity;
+package com.example.cuentas.dto;
 
-import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -10,13 +9,8 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity
-public class Movimiento {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class MovimientoDTO {
     private Long id;
-
     private LocalDate fecha;
     private String tipoMovimiento;
     private Double valor;
