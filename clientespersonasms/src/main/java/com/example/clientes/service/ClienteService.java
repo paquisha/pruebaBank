@@ -32,6 +32,7 @@ public class ClienteService implements IClienteService{
 
     @Override
     public List<ClienteDTO> getClientes() {
+
         return repo.findAll().stream().map(Mapper::toDTO).toList();
     }
 

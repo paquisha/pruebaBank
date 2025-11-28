@@ -9,6 +9,6 @@ public interface ICuentaService {
     List<CuentaDTO> listar();
     CuentaDTO obtener(String numeroCuenta);
     CuentaDTO crearCuenta(CuentaDTO Cuenta);
-    CuentaDTO actualizarCuenta(CuentaDTO Cuenta);
+    CuentaDTO actualizarCuenta(String id,CuentaDTO Cuenta);
     void eliminar(String numeroCuenta);
 }
