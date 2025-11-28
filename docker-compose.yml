@@ -1,0 +1,46 @@
+services:
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234567890
+      POSTGRES_DB: clientesdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  clientes-ms:
+    build: ./clientespersonasms
+    container_name: clientes-ms
+    depends_on:
+      - rabbitmq
+      - postgres
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    ports:
+      - "8081:8081"
+
+  cuentas-ms:
+    build: ./cuentasmovimientosms
+    container_name: cuentas-ms
+    depends_on:
+      - rabbitmq
+      - postgres
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    ports:
+      - "8082:8082"
+
+volumes:
+  postgres_data:
+

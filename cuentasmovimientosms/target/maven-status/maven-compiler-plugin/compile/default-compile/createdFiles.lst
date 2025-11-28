@@ -1,0 +1,13 @@
+com\example\cuentas\entity\Cuenta.class
+com\example\cuentas\controller\MovimientoController.class
+com\example\cuentas\config\RabbitConfig.class
+com\example\cuentas\service\CuentaService.class
+com\example\cuentas\events\ClienteConsumer.class
+com\example\cuentas\service\ReporteService.class
+com\example\cuentas\controller\CuentaController.class
+com\example\cuentas\repository\CuentaRepository.class
+com\example\cuentas\controller\ReporteController.class
+com\example\cuentas\CuentasApplication.class
+com\example\cuentas\entity\Movimiento.class
+com\example\cuentas\repository\MovimientoRepository.class
+com\example\cuentas\service\MovimientoService.class
