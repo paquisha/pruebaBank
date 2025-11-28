@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/reportes")
+@RequestMapping("/api/reportes")
 public class ReporteController {
 
     @Autowired
