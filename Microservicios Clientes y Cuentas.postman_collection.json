@@ -81,13 +81,14 @@
 					"raw": "{\n    \"fecha\": \"2025-11-27\",\n    \"tipoMovimiento\": \"Deposito\",\n    \"valor\": 350.0\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8081/movimientos/2100123456",
+					"raw": "http://localhost:8081/api/movimientos/2100123456",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8081",
 					"path": [
+						"api",
 						"movimientos",
 						"2100123456"
 					]
@@ -101,13 +102,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8081/reportes?clienteId=CLI-001&fechaInicio=2025-01-01&fechaFin=2025-12-31",
+					"raw": "http://localhost:8081/api/reportes?clienteId=CLI-001&fechaInicio=2025-01-01&fechaFin=2025-12-31",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8081",
 					"path": [
+						"api",
 						"reportes"
 					],
 					"query": [
