@@ -1,7 +1,5 @@
-package com.example.cuentas.entity;
+package com.example.cuentas.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import lombok.*;
 
 @Getter
@@ -9,12 +7,8 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity
-public class Cuenta {
-
-    @Id
+public class CuentaDTO {
     private String numeroCuenta;
-
     private String tipoCuenta;
     private Double saldoInicial;
     private Boolean estado;

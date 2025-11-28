@@ -1,10 +1,10 @@
-Microservicios ejemplo (clientes-personas-ms y cuentas-movimientos-ms)
+Microservicios ejemplo (clientespersonasms y cuentasmovimientosms)
 
 Estructura creada en /mnt/data/microservices_project
 
 Cómo compilar (por proyecto):
-  mvn -f clientes-personas-ms clean package
-  mvn -f cuentas-movimientos-ms clean package
+  mvn -f clientespersonasms clean package
+  mvn -f cuentasmovimientosms clean package
 
 Luego construir imágenes (ejemplo):
   docker build -t clientes-ms:latest ./clientes-personas-ms
@@ -20,5 +20,3 @@ Endpoints:
   Reportes: GET /reportes?clienteId=...&inicio=YYYY-MM-DD&fin=YYYY-MM-DD
 
 Notas:
- - Proyectos minimalistas para ejemplo técnico.
- - Cambia versiones de Spring Boot/Java según tu entorno.

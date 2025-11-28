@@ -30,12 +30,6 @@ public class ClienteService implements IClienteService{
         //return saved;
     //}
 
-    //public List<Cliente> listar() {  }
-
-    //public Cliente obtener(Long id) { return repo.findById(id).orElse(null); }
-
-    //public void eliminar(Long id) { repo.deleteById(id); }
-
     @Override
     public List<ClienteDTO> getClientes() {
         return repo.findAll().stream().map(Mapper::toDTO).toList();
